@@ -1,28 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { LineChart } from 'react-native-charts-wrapper';
+import { Button, FlatList, StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={{ flex: 1 }}>
-        <View style={styles.container}>
-          <Text>Hello World!</Text>
-          <LineChart style={styles.chart}
-            data={{ dataSets: [{ label: "demo", values: [{ y: 1 }, { y: 2 }, { y: 1 }] }] }}
-          />
-        </View>
-      </View>
+      <FlatList
+        data={[
+          "Line Chart",
+          "Bar Chart",
+          "Pie Chart",
+          "Scatter Plot Chart"
+        ]}
+        renderItem={({item}) => <Button title={item} onPress={() => {setTimeout(0)}}/>} />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#F5FCFF'
-  },
-  chart: {
-    flex: 1
-  }
-});
