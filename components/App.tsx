@@ -1,14 +1,28 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import { LineChart } from 'react-native-charts-wrapper';
 
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
-      <View>
-        <Text>Hello World!</Text>
+      <View style={{ flex: 1 }}>
+        <View style={styles.container}>
+          <Text>Hello World!</Text>
+          <LineChart style={styles.chart}
+            data={{ dataSets: [{ label: "demo", values: [{ y: 1 }, { y: 2 }, { y: 1 }] }] }}
+          />
+        </View>
       </View>
     );
   }
 }
 
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F5FCFF'
+  },
+  chart: {
+    flex: 1
+  }
+});
