@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import ChartListScreen from './ChartListScreen';
 import LineChartScreen from './LineChartScreen';
+import BarChartScreen from './BarChartScreen';
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ export default class App extends React.Component {
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Home">
           <Stack.Screen name="Home" component={ChartListScreen} />
+          <Stack.Screen name="BarChart" component={BarChartScreen}/>
           <Stack.Screen name="LineChart" component={LineChartScreen}/>
         </Stack.Navigator>
       </NavigationContainer>
