@@ -14,7 +14,7 @@ export default class ChartListScreen extends React.Component<{ navigation: Navig
     { id: '0', name: "Bar Chart", route: "BarChart" },
     { id: '1', name: "Pie Chart", route: "PieChart" },
     { id: '2', name: "Line Chart", route: "LineChart" },
-    { id: '3',  name: "Scatter Plot Chart", route: "" }
+    { id: '3',  name: "Scatter Chart", route: "ScatterChart" }
   ];
 
   render() {
