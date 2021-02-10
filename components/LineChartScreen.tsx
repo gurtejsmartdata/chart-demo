@@ -1,6 +1,6 @@
 import React from "react";
 import { processColor } from "react-native";
-import { LineChart, LineData, LineDataset } from "react-native-charts-wrapper";
+import { LineChart, LineData } from "react-native-charts-wrapper";
 
 export default class LineChartScreen extends React.Component {
 
@@ -14,7 +14,7 @@ export default class LineChartScreen extends React.Component {
 
   render() {
     return (
-      <LineChart style={{ flex: 1 }} data={this.data} />
+      <LineChart style={{ flex: 1, margin: 16 }} data={this.data} />
     );
   }
 }

@@ -21,7 +21,7 @@ export default class ScatterChartScreen extends React.Component {
 
   render() {
     return (
-      <ScatterChart style={{ flex: 1 }} data={this.data} />
+      <ScatterChart style={{ flex: 1, margin: 16 }} data={this.data} />
     );
   }
 }

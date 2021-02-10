@@ -16,7 +16,7 @@ export default class PieChartScreen extends React.Component {
 
   render() {
     return (
-      <PieChart style={{ flex: 1 }} data={this.data} />
+      <PieChart style={{ flex: 1, margin: 16 }} data={this.data} />
     );
   }
 }
