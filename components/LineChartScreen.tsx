@@ -2,10 +2,6 @@ import React from "react";
 import { processColor } from "react-native";
 import { LineChart, LineData, LineDataset } from "react-native-charts-wrapper";
 
-const colors = {
-  
-}
-
 export default class LineChartScreen extends React.Component {
 
   readonly data: LineData = {
